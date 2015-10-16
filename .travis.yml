@@ -9,7 +9,8 @@ deploy:
   default: true
   project: indieweb-test
   on: master
-  skip_cleanup: true
+  verbosity: info
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_498292065e17_key -iv $encrypted_498292065e17_iv
   -in indieweb-test-49d75f4fc415.json.enc -out indieweb-test-49d75f4fc415.json -d
